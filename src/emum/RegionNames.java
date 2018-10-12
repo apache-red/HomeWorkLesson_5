@@ -1,13 +1,29 @@
 package emum;
 
 
+import static emum.CountryNames.BELARUS;
+import static emum.CountryNames.RUSSIAN_FEDERATION;
+
 public enum RegionNames {
 
-    BREST(CountryNames.BELARUS), GOMEL(CountryNames.BELARUS), GRODNO(CountryNames.BELARUS), MOGILEV(CountryNames.BELARUS),
-    MINSK(CountryNames.BELARUS), VITEBS(CountryNames.BELARUS);
+    BREST(BELARUS), GOMEL(BELARUS), GRODNO(BELARUS), MOGILEV(BELARUS),
+    MINSK(BELARUS), VITEBSK(BELARUS), BRYANS(RUSSIAN_FEDERATION), NEWREGION();
 
 
-    RegionNames( CountryNames stateNames) {
 
+    private String country;
+
+    RegionNames(CountryNames countryNames) {
+        country=  countryNames.toString();
     }
+    RegionNames() {
+    }
+
+
+
+    public String getCountry() {
+        return country;
+    }
+
+
 }
