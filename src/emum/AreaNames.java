@@ -1,26 +1,26 @@
 package emum;
 
 public enum AreaNames {
-    BARANOVICHSKIJ(RegionNames.BREST), BERJOZOVSKIJ(RegionNames.BREST),BRESTSKIJ(RegionNames.BREST),
-    GANCEVICHSKIJ(RegionNames.BREST),  DROGICHINSKIJ(RegionNames.BREST), ZHABINKOVSKIJ(RegionNames.BREST),
-    IVANOVSKIJ(RegionNames.BREST), IVACEVICHSKIJ(RegionNames.BREST), KAMENECKIJ(RegionNames.BREST),
-    KOBRINSKIJ(RegionNames.BREST), LUNINECKIJ(RegionNames.BREST), LJAHOVICHSKIJ(RegionNames.BREST),
-    MALORITSKIJ(RegionNames.BREST), PINSKIJ(RegionNames.BREST), PRUZHANSKIJ(RegionNames.BREST),
-    STOLINSKIJ(RegionNames.BREST),
-    MAXBREST(RegionNames.BREST),
-    BESHENKOVICHSKIJ(RegionNames.VITEBSK), BRASLAVSKIJ(RegionNames.VITEBSK), VERHNEDVINSKIJ(RegionNames.VITEBSK),
-    VITEBSKIJ(RegionNames.VITEBSK), GLUBOKSKIJ(RegionNames.VITEBSK), GORODOKSKIJ(RegionNames.VITEBSK),
-    DOKSHICKIJ(RegionNames.VITEBSK), DUBROVENSKIJ(RegionNames.VITEBSK), LEPELSKIJ(RegionNames.VITEBSK),
-    LIOZNENSKIJ(RegionNames.VITEBSK), MIORSKIJ(RegionNames.VITEBSK), ORSHANSKIJ(RegionNames.VITEBSK),
-    POLOCKIJ(RegionNames.VITEBSK), POSTAVSKIJ(RegionNames.VITEBSK), ROSSONSKIJ(RegionNames.VITEBSK),
-    SENNENSKIJ(RegionNames.VITEBSK), TOLOCHINSKIJ(RegionNames.VITEBSK), USHACHSKIJ(RegionNames.VITEBSK),
-    CHASHNIKSKIJ(RegionNames.VITEBSK), SHARKOVSHHINSKIJ(RegionNames.VITEBSK), SHUMILINSKIJ(RegionNames.VITEBSK),
-    MAXVITEBSK(RegionNames.VITEBSK);
+    BARANOVICHSKIJ(RegionNames.BREST, CountryNames.BELARUS), BERJOZOVSKIJ(RegionNames.BREST, CountryNames.BELARUS),BRESTSKIJ(RegionNames.BREST, CountryNames.BELARUS),
+    GANCEVICHSKIJ(RegionNames.BREST, CountryNames.BELARUS),  DROGICHINSKIJ(RegionNames.BREST, CountryNames.BELARUS), ZHABINKOVSKIJ(RegionNames.BREST, CountryNames.BELARUS),
+    IVANOVSKIJ(RegionNames.BREST, CountryNames.BELARUS), IVACEVICHSKIJ(RegionNames.BREST, CountryNames.BELARUS), KAMENECKIJ(RegionNames.BREST, CountryNames.BELARUS),
+    KOBRINSKIJ(RegionNames.BREST, CountryNames.BELARUS), LUNINECKIJ(RegionNames.BREST, CountryNames.BELARUS), LJAHOVICHSKIJ(RegionNames.BREST, CountryNames.BELARUS),
+    MALORITSKIJ(RegionNames.BREST, CountryNames.BELARUS), PINSKIJ(RegionNames.BREST, CountryNames.BELARUS), PRUZHANSKIJ(RegionNames.BREST, CountryNames.BELARUS),
+    STOLINSKIJ(RegionNames.BREST, CountryNames.BELARUS),
+    MAXBREST(RegionNames.BREST, CountryNames.BELARUS),
+    BESHENKOVICHSKIJ(RegionNames.VITEBSK, CountryNames.BELARUS), BRASLAVSKIJ(RegionNames.VITEBSK, CountryNames.BELARUS), VERHNEDVINSKIJ(RegionNames.VITEBSK, CountryNames.BELARUS),
+    VITEBSKIJ(RegionNames.VITEBSK, CountryNames.BELARUS), GLUBOKSKIJ(RegionNames.VITEBSK, CountryNames.BELARUS), GORODOKSKIJ(RegionNames.VITEBSK, CountryNames.BELARUS),
+    DOKSHICKIJ(RegionNames.VITEBSK, CountryNames.BELARUS), DUBROVENSKIJ(RegionNames.VITEBSK, CountryNames.BELARUS), LEPELSKIJ(RegionNames.VITEBSK, CountryNames.BELARUS),
+    LIOZNENSKIJ(RegionNames.VITEBSK, CountryNames.BELARUS), MIORSKIJ(RegionNames.VITEBSK, CountryNames.BELARUS), ORSHANSKIJ(RegionNames.VITEBSK, CountryNames.BELARUS),
+    POLOCKIJ(RegionNames.VITEBSK, CountryNames.BELARUS), POSTAVSKIJ(RegionNames.VITEBSK, CountryNames.BELARUS), ROSSONSKIJ(RegionNames.VITEBSK, CountryNames.BELARUS),
+    SENNENSKIJ(RegionNames.VITEBSK, CountryNames.BELARUS), TOLOCHINSKIJ(RegionNames.VITEBSK, CountryNames.BELARUS), USHACHSKIJ(RegionNames.VITEBSK, CountryNames.BELARUS),
+    CHASHNIKSKIJ(RegionNames.VITEBSK, CountryNames.BELARUS), SHARKOVSHHINSKIJ(RegionNames.VITEBSK, CountryNames.BELARUS), SHUMILINSKIJ(RegionNames.VITEBSK, CountryNames.BELARUS),
+    MAXVITEBSK(RegionNames.VITEBSK, CountryNames.BELARUS);
 
 
     private String area;
 
-    AreaNames(RegionNames regionNames) {
+    AreaNames(RegionNames regionNames, CountryNames countryNames) {
         area=  regionNames.toString();
     }
 
